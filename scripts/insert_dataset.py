@@ -46,5 +46,7 @@ def parse_args():
 
 
 if __name__ == "__main__":
+    # Example call: python -m scripts.insert_dataset --unlabeled_dataset_csv static/img-dataset.csv
+
     args = parse_args()
     insert_ds(src=args.unlabeled_dataset_csv, dest=args.unlabeled_dataset_table)
